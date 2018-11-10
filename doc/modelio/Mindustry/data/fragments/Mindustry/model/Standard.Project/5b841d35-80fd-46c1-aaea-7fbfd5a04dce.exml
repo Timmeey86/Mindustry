@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Mindustry" version="4">
+  <OBJECT>
+    <ID name="Mindustry" mc="Standard.Project" uid="5b841d35-80fd-46c1-aaea-7fbfd5a04dce"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Mindustry]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="io" mc="Standard.Package" uid="d338ae08-96e8-4306-8c4e-c2ac2f59e5e9"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Mindustry" mc="Infrastructure.DiagramSet" uid="25fb02b2-c407-455c-8622-640ba2b8a96b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

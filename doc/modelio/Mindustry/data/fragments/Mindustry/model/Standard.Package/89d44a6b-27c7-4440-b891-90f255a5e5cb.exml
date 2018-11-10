@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ucore" version="4">
+  <OBJECT>
+    <ID name="ucore" mc="Standard.Package" uid="89d44a6b-27c7-4440-b891-90f255a5e5cb"/>
+    <PID name="anuke" mc="Standard.Package" uid="f34e876d-21ea-41a2-8070-d85aae19c54e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ucore]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="modules" mc="Standard.Package" uid="6061bb74-79fc-4abf-a830-fcc419572750"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

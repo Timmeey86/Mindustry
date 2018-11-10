@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="io" version="4">
+  <OBJECT>
+    <ID name="io" mc="Standard.Package" uid="d338ae08-96e8-4306-8c4e-c2ac2f59e5e9"/>
+    <PID name="Mindustry" mc="Standard.Project" uid="5b841d35-80fd-46c1-aaea-7fbfd5a04dce"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[io]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="anuke" mc="Standard.Package" uid="f34e876d-21ea-41a2-8070-d85aae19c54e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

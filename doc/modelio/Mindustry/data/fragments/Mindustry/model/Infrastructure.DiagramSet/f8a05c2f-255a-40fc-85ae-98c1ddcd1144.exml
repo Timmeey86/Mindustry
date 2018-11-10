@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Auto Diagrams" version="4">
+  <OBJECT>
+    <ID name="Auto Diagrams" mc="Infrastructure.DiagramSet" uid="f8a05c2f-255a-40fc-85ae-98c1ddcd1144"/>
+    <PID name="Mindustry" mc="Infrastructure.DiagramSet" uid="25fb02b2-c407-455c-8622-640ba2b8a96b"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Auto Diagrams]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Sub">
+        <COMPID name="Package Structure" mc="Infrastructure.DiagramSet" uid="38860139-ebec-4c3b-ac24-794f2e7ee597"/>
+        <COMPID name="Dependency" mc="Infrastructure.DiagramSet" uid="971eae36-9ccb-4c64-894c-59dba3291931"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

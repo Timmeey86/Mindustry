@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="modules" version="4">
+  <OBJECT>
+    <ID name="modules" mc="Standard.Package" uid="6061bb74-79fc-4abf-a830-fcc419572750"/>
+    <PID name="ucore" mc="Standard.Package" uid="89d44a6b-27c7-4440-b891-90f255a5e5cb"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[modules]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Module" mc="Standard.Class" uid="b33a5479-c962-4944-ad90-78bf319bd7ea"/>
+        <COMPID name="RenderModule" mc="Standard.Class" uid="2a9ca842-7ba4-4cba-9b95-bf22ae48c7c4"/>
+        <COMPID name="SceneModule" mc="Standard.Class" uid="a628a476-5bac-4b9d-bfd5-8cd55c521dbe"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

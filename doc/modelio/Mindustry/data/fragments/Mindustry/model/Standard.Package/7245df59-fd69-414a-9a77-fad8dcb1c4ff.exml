@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="core" version="4">
+  <OBJECT>
+    <ID name="core" mc="Standard.Package" uid="7245df59-fd69-414a-9a77-fad8dcb1c4ff"/>
+    <PID name="mindustry" mc="Standard.Package" uid="c7ca961b-51d7-4cd2-9f58-d98e40439057"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[core]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Logic" mc="Standard.Class" uid="e0163023-f258-4966-b7f4-440a1b974fc1"/>
+        <COMPID name="World" mc="Standard.Class" uid="2732b713-8387-411b-9dd5-605f83e61d17"/>
+        <COMPID name="Control" mc="Standard.Class" uid="a90f63a5-0e2c-476e-b504-f539832bd217"/>
+        <COMPID name="Renderer" mc="Standard.Class" uid="19b56218-7b93-447c-a077-44140d2dd261"/>
+        <COMPID name="UI" mc="Standard.Class" uid="ff47d00e-d485-4f11-9516-922d3c14eba5"/>
+        <COMPID name="NetServer" mc="Standard.Class" uid="1157471b-3bd3-413d-8efe-22e28098485b"/>
+        <COMPID name="NetClient" mc="Standard.Class" uid="631abeb5-f443-4170-8820-7e14ec4bfaae"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
