@@ -16,9 +16,14 @@
       <COMP relation="OwnedElement">
         <COMPID name="core" mc="Standard.Package" uid="7245df59-fd69-414a-9a77-fad8dcb1c4ff"/>
         <COMPID name="Mindustry" mc="Standard.Class" uid="f4d5cdbd-aed2-4353-9bd9-88754b20d501"/>
+        <COMPID name="Anuke (Main Developer)" mc="Standard.Actor" uid="d302a25a-56f0-444c-889e-82babfd28009"/>
+        <COMPID name="Contributors" mc="Standard.Actor" uid="b56699cb-814b-42f0-ac37-d7c3a46e829b"/>
+        <COMPID name="Translators" mc="Standard.Actor" uid="ccf5736d-a794-4493-96ca-5df4fb8ad17f"/>
+        <COMPID name="Players" mc="Standard.Actor" uid="3123c0fa-b069-4c1a-96f6-1883c2e3675a"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Mindustry" mc="Standard.ClassDiagram" uid="a5155f9c-5bc1-4c76-920a-a0fc449386d6"/>
+        <COMPID name="01 System Context" mc="Standard.UseCaseDiagram" uid="ee8019cc-e82e-487c-9063-a5071e8dbbe4"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

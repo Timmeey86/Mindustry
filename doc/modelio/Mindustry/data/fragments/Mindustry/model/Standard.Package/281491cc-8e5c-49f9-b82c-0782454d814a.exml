@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="io" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="External" version="4">
   <OBJECT>
-    <ID name="io" mc="Standard.Package" uid="d338ae08-96e8-4306-8c4e-c2ac2f59e5e9"/>
+    <ID name="External" mc="Standard.Package" uid="281491cc-8e5c-49f9-b82c-0782454d814a"/>
     <PID name="Mindustry" mc="Standard.Project" uid="5b841d35-80fd-46c1-aaea-7fbfd5a04dce"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,29 +9,30 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[io]]></ATT>
+      <ATT name="Name"><![CDATA[External]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedInformationFlow">
         <OBJECT>
-          <ID name="Crash Reports" mc="Standard.InformationFlow" uid="e16d785e-94d4-4f8c-8eff-18049ce0f384"/>
+          <ID name="Release Notes" mc="Standard.InformationFlow" uid="b1cf7a81-fc5b-486a-9aa6-98f641030fdf"/>
           <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[Crash Reports]]></ATT>
+            <ATT name="Name"><![CDATA[Release Notes]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="InformationSource">
-              <ID name="Mindustry" mc="Standard.Class" uid="f4d5cdbd-aed2-4353-9bd9-88754b20d501"/>
+              <ID name="GitHub" mc="Standard.Node" uid="b138c308-4ce0-4834-8879-bb01a648a2c3"/>
             </LINK>
             <LINK relation="InformationTarget">
-              <ID name="mindustry.us.to" mc="Standard.Node" uid="9e85cee8-3e33-433c-b083-b09072a5efb1"/>
+              <ID name="Mindustry" mc="Standard.Class" uid="f4d5cdbd-aed2-4353-9bd9-88754b20d501"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedElement">
-        <COMPID name="anuke" mc="Standard.Package" uid="f34e876d-21ea-41a2-8070-d85aae19c54e"/>
+        <COMPID name="mindustry.us.to" mc="Standard.Node" uid="9e85cee8-3e33-433c-b083-b09072a5efb1"/>
+        <COMPID name="GitHub" mc="Standard.Node" uid="b138c308-4ce0-4834-8879-bb01a648a2c3"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

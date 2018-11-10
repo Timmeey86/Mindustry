@@ -148,3 +148,6 @@ gradle-app.setting
 .DS_Store
 Thumbs.db
 android/libs/
+
+# Modelio (Software Design Tool)
+*/.runtime/*

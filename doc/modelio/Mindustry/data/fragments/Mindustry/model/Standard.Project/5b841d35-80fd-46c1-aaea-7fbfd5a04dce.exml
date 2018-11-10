@@ -11,6 +11,7 @@
     <DEPENDENCIES>
       <COMP relation="Model">
         <COMPID name="io" mc="Standard.Package" uid="d338ae08-96e8-4306-8c4e-c2ac2f59e5e9"/>
+        <COMPID name="External" mc="Standard.Package" uid="281491cc-8e5c-49f9-b82c-0782454d814a"/>
       </COMP>
       <COMP relation="DiagramRoot">
         <COMPID name="Mindustry" mc="Infrastructure.DiagramSet" uid="25fb02b2-c407-455c-8622-640ba2b8a96b"/>
