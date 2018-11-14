@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Components" version="4">
+  <OBJECT>
+    <ID name="Components" mc="Standard.Package" uid="72ba2ecc-0daa-41b4-9d34-91d26b71ecb4"/>
+    <PID name="Mindustry" mc="Standard.Project" uid="5b841d35-80fd-46c1-aaea-7fbfd5a04dce"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Components]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="android" mc="Standard.Component" uid="2b191aa9-3e46-4a82-985e-f91eb7c93b52"/>
+        <COMPID name="annotations" mc="Standard.Component" uid="3657e79c-79e7-4c83-a1fd-f7cb757d48aa"/>
+        <COMPID name="kryonet" mc="Standard.Component" uid="721246e2-7e5b-4e57-ade6-ff5caada80b9"/>
+        <COMPID name="server" mc="Standard.Component" uid="4c2e0651-02cf-493b-a812-daafd9899bb5"/>
+        <COMPID name="core" mc="Standard.Component" uid="b18b829d-65fa-4aa3-ac4b-5cddab8187a5"/>
+        <COMPID name="desktop" mc="Standard.Component" uid="0a9bf896-ced5-4625-8289-d8e0770b49c3"/>
+        <COMPID name="tests" mc="Standard.Component" uid="ee999b51-0154-4568-b9aa-ba555fa86192"/>
+        <COMPID name="tools" mc="Standard.Component" uid="3996c8f6-6074-48ca-9ac8-d9752af9f57b"/>
+        <COMPID name="ios" mc="Standard.Component" uid="1388f9a0-923b-457f-9911-ef6c7f06a35f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Components" mc="Standard.ClassDiagram" uid="33e8fe4f-e9d8-4c10-8bab-401c28c8235c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
