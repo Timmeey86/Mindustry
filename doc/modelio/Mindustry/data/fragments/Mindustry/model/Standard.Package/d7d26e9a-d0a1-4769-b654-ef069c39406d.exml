@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="units" version="4">
+  <OBJECT>
+    <ID name="units" mc="Standard.Package" uid="d7d26e9a-d0a1-4769-b654-ef069c39406d"/>
+    <PID name="entities" mc="Standard.Package" uid="0de23f28-067c-4814-933c-9a5bd956eb04"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[units]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="UnitType" mc="Standard.Class" uid="7408f299-141a-4c95-a8e6-10ea1e13a5a1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

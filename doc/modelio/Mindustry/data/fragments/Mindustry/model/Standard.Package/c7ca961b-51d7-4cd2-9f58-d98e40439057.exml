@@ -20,6 +20,10 @@
         <COMPID name="Contributors" mc="Standard.Actor" uid="b56699cb-814b-42f0-ac37-d7c3a46e829b"/>
         <COMPID name="Translators" mc="Standard.Actor" uid="ccf5736d-a794-4493-96ca-5df4fb8ad17f"/>
         <COMPID name="Players" mc="Standard.Actor" uid="3123c0fa-b069-4c1a-96f6-1883c2e3675a"/>
+        <COMPID name="game" mc="Standard.Package" uid="0bb94599-372d-4fa0-b6a2-086e8b6b15a4"/>
+        <COMPID name="type" mc="Standard.Package" uid="0095b986-4125-48f3-8e88-51cba3355144"/>
+        <COMPID name="entities" mc="Standard.Package" uid="0de23f28-067c-4814-933c-9a5bd956eb04"/>
+        <COMPID name="world" mc="Standard.Package" uid="484bc78b-487a-4791-900b-327b7df9c196"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Mindustry" mc="Standard.ClassDiagram" uid="a5155f9c-5bc1-4c76-920a-a0fc449386d6"/>

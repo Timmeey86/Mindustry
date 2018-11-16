@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="type" version="4">
+  <OBJECT>
+    <ID name="type" mc="Standard.Package" uid="0095b986-4125-48f3-8e88-51cba3355144"/>
+    <PID name="mindustry" mc="Standard.Package" uid="c7ca961b-51d7-4cd2-9f58-d98e40439057"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[type]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="WeatherEvent" mc="Standard.Class" uid="e9e461d8-948e-47f2-9b1d-573652371821"/>
+        <COMPID name="AmmoType" mc="Standard.Class" uid="85fae05f-b5c9-4320-9257-ec94855cd251"/>
+        <COMPID name="StatusEffect" mc="Standard.Class" uid="ed8e8b62-d930-465d-9bcb-139775c7c29d"/>
+        <COMPID name="Weapon" mc="Standard.Class" uid="d6ea11e1-bc65-4376-8180-b40a3a5884fd"/>
+        <COMPID name="Mech" mc="Standard.Class" uid="98ec3587-cdf9-4406-be3b-7c26d4e004fc"/>
+        <COMPID name="Recipe" mc="Standard.Class" uid="3666305b-8668-4b7d-b8bf-eac7d36bdfcf"/>
+        <COMPID name="Liquid" mc="Standard.Class" uid="d0a61f94-a856-4cca-84e3-6fd5f4c19f20"/>
+        <COMPID name="Item" mc="Standard.Class" uid="013fa4e9-7486-4032-add9-cd77079f0069"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

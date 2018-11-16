@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="game" version="4">
+  <OBJECT>
+    <ID name="game" mc="Standard.Package" uid="0bb94599-372d-4fa0-b6a2-086e8b6b15a4"/>
+    <PID name="mindustry" mc="Standard.Package" uid="c7ca961b-51d7-4cd2-9f58-d98e40439057"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[game]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Content" mc="Standard.Class" uid="415acf53-777f-4bc7-a077-2fda39e36aba"/>
+        <COMPID name="MappableContent" mc="Standard.Class" uid="4f918284-321e-47ab-b905-5364c2fb975b"/>
+        <COMPID name="UnlockableContent" mc="Standard.Class" uid="fc77ff74-caac-414e-8444-5a273b4c396b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

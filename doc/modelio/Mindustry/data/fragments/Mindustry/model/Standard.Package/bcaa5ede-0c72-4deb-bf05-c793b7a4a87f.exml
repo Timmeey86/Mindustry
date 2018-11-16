@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="bullet" version="4">
+  <OBJECT>
+    <ID name="bullet" mc="Standard.Package" uid="bcaa5ede-0c72-4deb-bf05-c793b7a4a87f"/>
+    <PID name="entities" mc="Standard.Package" uid="0de23f28-067c-4814-933c-9a5bd956eb04"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[bullet]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="BulletType" mc="Standard.Class" uid="adae4641-3456-4cdc-a6bc-5a1779e6972b"/>
+        <COMPID name="LiquidBulletType" mc="Standard.Class" uid="ff3606e4-adb2-45ee-ab1a-b92e5f7982fa"/>
+        <COMPID name="BasicBulletType" mc="Standard.Class" uid="c05e0e6b-618d-415f-9110-bcfaab25f69c"/>
+        <COMPID name="FlakBulletType" mc="Standard.Class" uid="0bf5be6b-931c-4b5a-9255-8083f8cebf67"/>
+        <COMPID name="ArtilleryBulletType" mc="Standard.Class" uid="0942c131-5a59-470e-866e-fe4f9d92b68d"/>
+        <COMPID name="MissileBulletType" mc="Standard.Class" uid="8f527d3d-d436-4a7e-b387-a5d83223c427"/>
+        <COMPID name="BombBulletType" mc="Standard.Class" uid="aa8727c0-e786-4847-99e9-2877d2893228"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
