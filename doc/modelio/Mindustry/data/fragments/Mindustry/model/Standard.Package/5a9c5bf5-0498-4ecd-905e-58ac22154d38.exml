@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="units" version="4">
+  <OBJECT>
+    <ID name="units" mc="Standard.Package" uid="5a9c5bf5-0498-4ecd-905e-58ac22154d38"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[units]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="MechPad" mc="Standard.Class" uid="3abc2c8f-70cc-497c-acef-2950c496bb16"/>
+        <COMPID name="UnitFactory" mc="Standard.Class" uid="82ddc71f-215d-4df1-87ad-7d6974ee1d7b"/>
+        <COMPID name="RepairPoint" mc="Standard.Class" uid="d520d1aa-6864-4a2b-a409-535bd814bfd0"/>
+        <COMPID name="Reconstructor" mc="Standard.Class" uid="6388f3b2-9600-490a-aec4-ed5ff3fc3dd9"/>
+        <COMPID name="CommandCenter" mc="Standard.Class" uid="30e69a43-b509-4f94-9306-b166b67fa8b1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Unit Blocks" mc="Standard.ClassDiagram" uid="579ee4a5-f87f-4610-8a9d-79a316054e82"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

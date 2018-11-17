@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="storage" version="4">
+  <OBJECT>
+    <ID name="storage" mc="Standard.Package" uid="fc1f99d2-68e4-4366-a646-34f20f8ffeac"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[storage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="CoreBlock" mc="Standard.Class" uid="04d73ca2-7f3d-4478-b179-533863554e76"/>
+        <COMPID name="Vault" mc="Standard.Class" uid="d7e612ba-fd06-47af-a751-81aa2abe0288"/>
+        <COMPID name="StorageBlock" mc="Standard.Class" uid="11f618a2-ac23-4865-bf49-b1dd78d4234d"/>
+        <COMPID name="Unloader" mc="Standard.Class" uid="39f3a252-27ec-4bf8-b5b1-8a68bdff5376"/>
+        <COMPID name="SortedUnloader" mc="Standard.Class" uid="cc510181-7083-4e74-a749-ab532c64dc92"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Standard.ElementRealization" uid="70332d34-a861-4e50-b86b-13800b3598a2"/>
+          <ATTRIBUTES>
+            <ATT name="Mapping"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Block" mc="Standard.Class" uid="ec0e41c8-89b6-4e85-835f-c2f2e246b7ac"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="e8d1bf82-fdef-4a6f-93c6-452656b58d77"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Storage Blocks" mc="Standard.ClassDiagram" uid="ea32f4f4-4d7f-4c2a-94cf-7c279fa42553"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="related_diagram" mc="Infrastructure.Stereotype" uid="2961d57b-5120-11de-bbaf-00218648fa3d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Storage Blocks" mc="Standard.ClassDiagram" uid="ea32f4f4-4d7f-4c2a-94cf-7c279fa42553"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,9 +1,7 @@
-#Fri Nov 16 20:45:27 CET 2018
+#Sat Nov 17 18:20:39 CET 2018
 org.modelio.module.propertytab.JavaDesigner\ v3.8.01\ GModule\ @file\:///C\:/Users/Stefan/.modelio/3.8/modules/JavaDesigner_3.8.01/JavaDesigner_3.8.01.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.module.propertytab.JavaDesigner\ v3.8.01\ GModule\ @file\:///C\:/Users/Stefan/.modelio/3.8/modules/JavaDesigner_3.8.01/JavaDesigner_3.8.01.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
 org.modelio.module.propertytab.JavaDesigner\ v3.8.01\ GModule\ @file\:///C\:/Users/Stefan/.modelio/3.8/modules/JavaDesigner_3.8.01/JavaDesigner_3.8.01.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
-org.modelio.diagram.editor.OpenedDiagrams3='Content Subtypes' {03067665-d2d1-4620-94a9-3b0232051161} Standard.ClassDiagram
-org.modelio.diagram.editor.OpenedDiagrams2='Components' {33e8fe4f-e9d8-4c10-8bab-401c28c8235c} Standard.ClassDiagram
-org.modelio.diagram.editor.OpenedDiagrams1='01 System Context' {ee8019cc-e82e-487c-9063-a5071e8dbbe4} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Block Subtypes' {afd7da9f-8acc-45f1-8c29-440a20678410} Standard.ClassDiagram
 org.modelio.module.propertytab.JavaDesigner\ v3.8.01\ GModule\ @file\:///C\:/Users/Stefan/.modelio/3.8/modules/JavaDesigner_3.8.01/JavaDesigner_3.8.01.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams0='Mindustry' {a5155f9c-5bc1-4c76-920a-a0fc449386d6} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Content Subtypes' {03067665-d2d1-4620-94a9-3b0232051161} Standard.ClassDiagram

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="defense" version="4">
+  <OBJECT>
+    <ID name="defense" mc="Standard.Package" uid="42fcad11-b1ae-4d4b-bf29-04adf045c298"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[defense]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Wall" mc="Standard.Class" uid="e3578ef0-c3ee-4d41-bcf4-a063f12077f3"/>
+        <COMPID name="MendingWall" mc="Standard.Class" uid="d8c69ef6-f65c-4288-896c-e0e7ff9eb2da"/>
+        <COMPID name="Door" mc="Standard.Class" uid="52c48afa-7a9c-4e8a-a832-16eb4eb55f7a"/>
+        <COMPID name="SurgeWall" mc="Standard.Class" uid="cb5fce91-23f3-4d3f-acec-c51621304b23"/>
+        <COMPID name="DeflectorWall" mc="Standard.Class" uid="b987ae25-e6b1-46cd-b522-0c8e716ba892"/>
+        <COMPID name="ShockMine" mc="Standard.Class" uid="d12b91bf-4f85-40a1-a6f2-fc3b5fe45a08"/>
+        <COMPID name="turrets" mc="Standard.Package" uid="857eae27-479d-4884-aada-68c90fd27162"/>
+        <COMPID name="MendProjector" mc="Standard.Class" uid="bf77263f-1e51-4242-89f3-a0850e790bcf"/>
+        <COMPID name="OverdriveProjector" mc="Standard.Class" uid="f0d7a693-0a27-4268-b5a8-4a7a27f662fa"/>
+        <COMPID name="ForceProjector" mc="Standard.Class" uid="d5e4ffa5-38ce-4d46-8903-d503f56c7421"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Defense Blocks" mc="Standard.ClassDiagram" uid="8d68978e-3646-4658-9133-d18ce35a6c3a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

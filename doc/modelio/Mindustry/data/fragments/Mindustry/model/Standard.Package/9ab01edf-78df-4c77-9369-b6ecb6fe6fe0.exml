@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="power" version="4">
+  <OBJECT>
+    <ID name="power" mc="Standard.Package" uid="9ab01edf-78df-4c77-9369-b6ecb6fe6fe0"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[power]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="PowerNode" mc="Standard.Class" uid="787fdf63-2922-40ed-ad0b-8acc9c7e3dfd"/>
+        <COMPID name="PowerDistributor" mc="Standard.Class" uid="04a60e86-30ae-4443-a9ff-5cf40218bffc"/>
+        <COMPID name="PowerSmelter" mc="Standard.Class" uid="a021c216-d3a4-4dfd-859d-e0260b121b9e"/>
+        <COMPID name="Battery" mc="Standard.Class" uid="b39117e3-0019-453a-b94d-7f679d8e690f"/>
+        <COMPID name="PowerGenerator" mc="Standard.Class" uid="db3a2292-1d96-4739-b5d4-9d64701e6fb5"/>
+        <COMPID name="PhaseWeaver" mc="Standard.Class" uid="5e257739-6221-40aa-b8f1-6a0cf5002893"/>
+        <COMPID name="LiquidGenerator" mc="Standard.Class" uid="0023abef-84f3-498d-9614-f716a817edc3"/>
+        <COMPID name="LiquidHeatGenerator" mc="Standard.Class" uid="317413cb-da75-4195-b004-acfcdce9936c"/>
+        <COMPID name="SolarGenerator" mc="Standard.Class" uid="dde3898a-6af3-489c-9be0-eb6bc1e9315b"/>
+        <COMPID name="ItemGenerator" mc="Standard.Class" uid="d9780e89-c706-4127-93f8-db91cb87eb20"/>
+        <COMPID name="DecayGenerator" mc="Standard.Class" uid="ebe6a382-55a2-4abb-9cfc-afbcfb4f7f64"/>
+        <COMPID name="ItemLiquidGenerator" mc="Standard.Class" uid="04150e57-49d8-4238-9774-1d5c6cf851db"/>
+        <COMPID name="BurnerGenerator" mc="Standard.Class" uid="d43a27fc-2ba1-4091-a1ca-8dcf70b3d309"/>
+        <COMPID name="TurbineGenerator" mc="Standard.Class" uid="e24ffd76-31a8-4c06-9e86-9665d62a8455"/>
+        <COMPID name="FusionReactor" mc="Standard.Class" uid="ca403797-7b9b-467c-9214-ba010030cba1"/>
+        <COMPID name="NuclearReactor" mc="Standard.Class" uid="0c422dca-6955-49ec-8172-3fe3551c9fa1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Power Blocks" mc="Standard.ClassDiagram" uid="fc993a1d-5c99-4f5b-9908-fd45a3d91ad4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

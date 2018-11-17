@@ -28,6 +28,7 @@
       <COMP relation="Product">
         <COMPID name="Mindustry" mc="Standard.ClassDiagram" uid="a5155f9c-5bc1-4c76-920a-a0fc449386d6"/>
         <COMPID name="01 System Context" mc="Standard.UseCaseDiagram" uid="ee8019cc-e82e-487c-9063-a5071e8dbbe4"/>
+        <COMPID name="Content Subtypes" mc="Standard.ClassDiagram" uid="03067665-d2d1-4620-94a9-3b0232051161"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

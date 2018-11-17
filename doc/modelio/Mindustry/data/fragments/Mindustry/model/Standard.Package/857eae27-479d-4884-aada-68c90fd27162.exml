@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="turrets" version="4">
+  <OBJECT>
+    <ID name="turrets" mc="Standard.Package" uid="857eae27-479d-4884-aada-68c90fd27162"/>
+    <PID name="defense" mc="Standard.Package" uid="42fcad11-b1ae-4d4b-bf29-04adf045c298"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[turrets]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Turret" mc="Standard.Class" uid="ea46ef70-30cb-463d-8ab9-1b55055fcd43"/>
+        <COMPID name="CooledTurret" mc="Standard.Class" uid="b909652d-b2c0-4c84-9ee3-752fd7a8e27c"/>
+        <COMPID name="PowerTurret" mc="Standard.Class" uid="f3add0a3-56c5-45f6-ad71-16a79d3ad58b"/>
+        <COMPID name="LaserTurret" mc="Standard.Class" uid="36a68945-61c8-4daf-8fd3-ae578a49870b"/>
+        <COMPID name="ChargeTurret" mc="Standard.Class" uid="7f25982d-5338-4673-a18e-38e8fbe30043"/>
+        <COMPID name="ItemTurret" mc="Standard.Class" uid="033a40e4-3935-414c-9008-044779b65b09"/>
+        <COMPID name="ArtilleryTurret" mc="Standard.Class" uid="81eae164-00ec-41de-85c4-94416fca87f5"/>
+        <COMPID name="BurstTurret" mc="Standard.Class" uid="6b08f54f-e218-45a8-8906-dbed6a01b784"/>
+        <COMPID name="DoubleTurret" mc="Standard.Class" uid="f0fb90b5-6a03-4fdd-b41f-9e04e54baf57"/>
+        <COMPID name="LiquidTurret" mc="Standard.Class" uid="33a8568e-3a94-4bde-a05c-89acf162f11d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

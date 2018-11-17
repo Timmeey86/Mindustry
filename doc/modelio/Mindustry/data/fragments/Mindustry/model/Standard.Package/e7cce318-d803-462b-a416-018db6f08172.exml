@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="logic" version="4">
+  <OBJECT>
+    <ID name="logic" mc="Standard.Package" uid="e7cce318-d803-462b-a416-018db6f08172"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[logic]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="LogicBlock" mc="Standard.Class" uid="9a521f68-fd4b-4d98-985d-4e7c66ff784b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="BaseBlock" mc="Standard.Class" uid="0213f6f8-6ae1-415e-b98d-d8002f65b158"/>
+        <COMPID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
         <COMPID name="Block" mc="Standard.Class" uid="ec0e41c8-89b6-4e85-835f-c2f2e246b7ac"/>
       </COMP>
     </DEPENDENCIES>

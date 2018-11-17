@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="production" version="4">
+  <OBJECT>
+    <ID name="production" mc="Standard.Package" uid="caae497f-e334-4221-acaa-7c964fbc24fb"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[production]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Smelter" mc="Standard.Class" uid="2a5f184c-6947-4564-8e55-c5dd29e3a0cb"/>
+        <COMPID name="Drill" mc="Standard.Class" uid="b70aacb5-f126-4496-8fcd-6cc200db116a"/>
+        <COMPID name="Cultivator" mc="Standard.Class" uid="8d2d12ed-20ee-4258-8660-5ab8e31138b6"/>
+        <COMPID name="GenericCrafter" mc="Standard.Class" uid="586db1c7-a1e1-4d56-947b-f2303275ebbe"/>
+        <COMPID name="Pulverizer" mc="Standard.Class" uid="671d8882-7ceb-436b-b4af-292d7da51b07"/>
+        <COMPID name="PlastaniumCompressor" mc="Standard.Class" uid="e396d8d6-e182-496b-8ccf-05ea9019fbc3"/>
+        <COMPID name="PowerCrafter" mc="Standard.Class" uid="16b9f1f3-73fd-477a-ade6-618adb676a58"/>
+        <COMPID name="Compressor" mc="Standard.Class" uid="ccd4f56c-9092-4169-b8a7-5f4cbe19042c"/>
+        <COMPID name="Separator" mc="Standard.Class" uid="50ef1b87-35fb-4b10-9752-d3a6407eea61"/>
+        <COMPID name="Incinerator" mc="Standard.Class" uid="81328164-c305-47d8-be35-80c06937c6da"/>
+        <COMPID name="Pump" mc="Standard.Class" uid="92925a3d-e4b0-4e5b-b9eb-ec516629751d"/>
+        <COMPID name="LiquidMixer" mc="Standard.Class" uid="37ebefaf-cb21-406d-aff1-68a2b4fae388"/>
+        <COMPID name="SolidPump" mc="Standard.Class" uid="7870acb0-adc8-4630-8986-a85e3c8de869"/>
+        <COMPID name="Fracker" mc="Standard.Class" uid="20eebc76-98b5-4e10-b0b3-5ac6d85fc11c"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Production Blocks" mc="Standard.ClassDiagram" uid="34f22ad5-d571-4152-89e3-b2dc51796ae8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

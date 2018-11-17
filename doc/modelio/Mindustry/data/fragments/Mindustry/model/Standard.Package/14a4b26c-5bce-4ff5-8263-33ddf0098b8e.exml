@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="distribution" version="4">
+  <OBJECT>
+    <ID name="distribution" mc="Standard.Package" uid="14a4b26c-5bce-4ff5-8263-33ddf0098b8e"/>
+    <PID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[distribution]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ItemBridge" mc="Standard.Class" uid="cf5ac786-c757-4c31-bf9e-671cc3964762"/>
+        <COMPID name="LiquidBridge" mc="Standard.Class" uid="c3d8d333-259e-4091-8f73-bbae79e53a9d"/>
+        <COMPID name="ExtendingItemBridge" mc="Standard.Class" uid="f83200ca-ae3f-4825-86aa-3bb41c22a9fd"/>
+        <COMPID name="BufferedItemBridge" mc="Standard.Class" uid="8697f829-0e85-4a32-a433-3e49fd446b4f"/>
+        <COMPID name="LiquidItemBridge" mc="Standard.Class" uid="f10565fd-126e-484f-a278-ba82e412362f"/>
+        <COMPID name="MassDriver" mc="Standard.Class" uid="36fb9870-5342-4e5f-8633-4882541be47b"/>
+        <COMPID name="Conveyor" mc="Standard.Class" uid="5f01d369-8a0a-4d0d-a72e-fea4cd542640"/>
+        <COMPID name="Sorter" mc="Standard.Class" uid="ea390f39-b157-4b86-850c-eb896af26a6a"/>
+        <COMPID name="Conduit" mc="Standard.Class" uid="941630e5-1760-4cf6-b357-795b486c7a35"/>
+        <COMPID name="LiquidJunction" mc="Standard.Class" uid="1f53db13-dd71-4785-90a8-a4fb7c5bd0b4"/>
+        <COMPID name="LiquidRouter" mc="Standard.Class" uid="75d97550-3b6e-41ca-82d8-47d47927444a"/>
+        <COMPID name="Junction" mc="Standard.Class" uid="1bcc4520-89d7-4a58-b60c-4664bfc8f695"/>
+        <COMPID name="Router" mc="Standard.Class" uid="2c446651-7b15-4f36-b7b0-cb456b7fcbad"/>
+        <COMPID name="OverflowGate" mc="Standard.Class" uid="88309c66-28c8-42cb-8dc1-2382f9008390"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Standard.ElementRealization" uid="f9643e04-75ae-4f44-aa51-9a59dd34b77b"/>
+          <ATTRIBUTES>
+            <ATT name="Mapping"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Block" mc="Standard.Class" uid="ec0e41c8-89b6-4e85-835f-c2f2e246b7ac"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="0274fc23-f36f-4c89-a62e-22240bcdd92f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Distribution Blocks" mc="Standard.ClassDiagram" uid="e7ed8b81-6698-4325-9b41-e568e99b48a4"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="related_diagram" mc="Infrastructure.Stereotype" uid="2961d57b-5120-11de-bbaf-00218648fa3d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Distribution Blocks" mc="Standard.ClassDiagram" uid="e7ed8b81-6698-4325-9b41-e568e99b48a4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

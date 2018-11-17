@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="blocks" version="4">
+  <OBJECT>
+    <ID name="blocks" mc="Standard.Package" uid="3215a691-de05-4c76-9ad7-e927d7a63bc0"/>
+    <PID name="world" mc="Standard.Package" uid="484bc78b-487a-4791-900b-327b7df9c196"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[blocks]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Floor" mc="Standard.Class" uid="47da4503-8666-4cd7-9239-0950a71c0efd"/>
+        <COMPID name="OreBlock" mc="Standard.Class" uid="691a769f-d5bf-49a6-a69e-f8c2ce8c824d"/>
+        <COMPID name="storage" mc="Standard.Package" uid="fc1f99d2-68e4-4366-a646-34f20f8ffeac"/>
+        <COMPID name="defense" mc="Standard.Package" uid="42fcad11-b1ae-4d4b-bf29-04adf045c298"/>
+        <COMPID name="units" mc="Standard.Package" uid="5a9c5bf5-0498-4ecd-905e-58ac22154d38"/>
+        <COMPID name="Rock" mc="Standard.Class" uid="3c26d8a0-be07-4c8d-b2d9-a284d861c08e"/>
+        <COMPID name="PowerBlock" mc="Standard.Class" uid="8cfb8303-676c-4cd8-a731-df96f20d7f4e"/>
+        <COMPID name="power" mc="Standard.Package" uid="9ab01edf-78df-4c77-9369-b6ecb6fe6fe0"/>
+        <COMPID name="distribution" mc="Standard.Package" uid="14a4b26c-5bce-4ff5-8263-33ddf0098b8e"/>
+        <COMPID name="production" mc="Standard.Package" uid="caae497f-e334-4221-acaa-7c964fbc24fb"/>
+        <COMPID name="BuildBlock" mc="Standard.Class" uid="1e604aaf-2287-459d-8f2b-399acbb22c33"/>
+        <COMPID name="BlockPart" mc="Standard.Class" uid="f75348cd-0013-48e7-b312-e09888b40b16"/>
+        <COMPID name="LiquidBlock" mc="Standard.Class" uid="3c9e7282-024c-4aaf-8d39-ac34b9f5b00c"/>
+        <COMPID name="logic" mc="Standard.Package" uid="e7cce318-d803-462b-a416-018db6f08172"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Block Subtypes" mc="Standard.ClassDiagram" uid="afd7da9f-8acc-45f1-8c29-440a20678410"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
