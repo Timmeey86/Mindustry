@@ -13,6 +13,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="41c1285c-fe01-40f2-857d-add0023df754"/>
+      </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="core" mc="Standard.Package" uid="7245df59-fd69-414a-9a77-fad8dcb1c4ff"/>
         <COMPID name="Mindustry" mc="Standard.Class" uid="f4d5cdbd-aed2-4353-9bd9-88754b20d501"/>
