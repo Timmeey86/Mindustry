@@ -16,6 +16,7 @@ public class PowerGraph{
 
     private final ObjectSet<Tile> producers = new ObjectSet<>();
     private final ObjectSet<Tile> consumers = new ObjectSet<>();
+    private final ObjectSet<Tile> batteries = new ObjectSet<>();
     private final ObjectSet<Tile> all = new ObjectSet<>();
 
     private long lastFrameUpdated;
@@ -30,39 +31,21 @@ public class PowerGraph{
         return graphID;
     }
 
-<<<<<<< HEAD
-    public void update(){
-        if(threads.getFrameID() == lastFrameUpdated || consumers.size == 0 || producers.size == 0){
-            return;
-        }
-
-        lastFrameUpdated = threads.getFrameID();
-
-        boolean charge = false;
-
-        float totalInput = 0f;
-        float bufferInput = 0f;
-=======
     public float getPowerProduced(){
         float powerProduced = 0f;
->>>>>>> 8218cfc7... cleaned up PowerGraph
         for(Tile producer : producers){
-            if(producer.block().consumesPower){
-                bufferInput += producer.entity.power.amount;
-            }else{
-                totalInput += producer.entity.power.amount;
-            }
+            powerProduced += producer.block().getPowerProduction(producer);
         }
         return powerProduced;
     }
 
-    public float getPowrerNeeded(){
+    public float getPowerNeeded(){
         float powerNeeded = 0f;
         for(Tile consumer : consumers){
-            if(consumer.block().outputsPower){
-                bufferOutput += consumer.block().powerCapacity - consumer.entity.power.amount;
+            if(consumer.block().bufferedPowerConsumer){
+                powerNeeded += (1f - consumer.entity.power.satisfaction) * consumer.block().basePowerUse;
             }else{
-                maxOutput += consumer.block().powerCapacity - consumer.entity.power.amount;
+                powerNeeded += consumer.block().basePowerUse + consumer.entity.power.extraUse;
             }
         }
         return powerNeeded;
@@ -73,6 +56,7 @@ public class PowerGraph{
         for(Tile battery : batteries){
             totalAccumulator += battery.entity.power.satisfaction * battery.block().basePowerUse;
         }
+        return totalAccumulator;
     }
 
     public float getBatteryCapacity(){
@@ -80,6 +64,7 @@ public class PowerGraph{
         for(Tile battery : batteries){
             totalCapacity += (1f - battery.entity.power.satisfaction) * battery.block().basePowerUse;
         }
+        return totalCapacity;
     }
 
     public float useBatteries(float needed){
@@ -95,8 +80,8 @@ public class PowerGraph{
     public float chargeBatteries(float excess){
         float capacity = getBatteryCapacity();
         float thing = Math.min(1, excess / capacity);
-        for(tile battery : batteries){
-            battery.power.satisfaction += (1 - battery.power.satisfaction) * thing;
+        for(Tile battery : batteries){
+            battery.entity.power.satisfaction += (1 - battery.entity.power.satisfaction) * thing;
         }
         return Math.min(excess, capacity);
     }
@@ -105,11 +90,10 @@ public class PowerGraph{
         float satisfaction = Math.min(1, produced / needed);
         for(Tile consumer : consumers){
             if(consumer.block().bufferedPowerConsumer){
-                consumer.power.satisfaction += (1 - consumer.power.satisfaction) * satisfaction;
+                consumer.entity.power.satisfaction += (1 - consumer.entity.power.satisfaction) * satisfaction;
             }else{
-                consumer.power.satisfaction = satisfaction;
+                consumer.entity.power.satisfaction = satisfaction;
             }
-            producer.entity.power.amount -= producer.entity.power.amount * inputUsed;
         }
     }
 
@@ -120,7 +104,7 @@ public class PowerGraph{
 
         lastFrameUpdated = threads.getFrameID();
 
-        float powerNeeded = getPowrerNeeded();
+        float powerNeeded = getPowerNeeded();
         float powerProduced = getPowerProduced();
 
         if(powerNeeded > powerProduced){
@@ -142,11 +126,11 @@ public class PowerGraph{
         tile.entity.power.graph = this;
         all.add(tile);
 
-        if(tile.block().outputsPower){
+        if(tile.block().outputsPower && tile.block().consumesPower){
+            batteries.add(tile);
+        }else if(tile.block().outputsPower){
             producers.add(tile);
-        }
-
-        if(tile.block().consumesPower){
+        }else if(tile.block().consumesPower){
             consumers.add(tile);
         }
     }
@@ -158,6 +142,7 @@ public class PowerGraph{
         all.clear();
         producers.clear();
         consumers.clear();
+        batteries.clear();
     }
 
     public void reflow(Tile tile){
@@ -205,6 +190,7 @@ public class PowerGraph{
         return "PowerGraph{" +
         "producers=" + producers +
         ", consumers=" + consumers +
+        ", batteries=" + batteries +
         ", all=" + all +
         ", lastFrameUpdated=" + lastFrameUpdated +
         ", graphID=" + graphID +
