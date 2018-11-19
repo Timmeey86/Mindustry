@@ -30,6 +30,7 @@ public class PowerGraph{
         return graphID;
     }
 
+<<<<<<< HEAD
     public void update(){
         if(threads.getFrameID() == lastFrameUpdated || consumers.size == 0 || producers.size == 0){
             return;
@@ -41,6 +42,10 @@ public class PowerGraph{
 
         float totalInput = 0f;
         float bufferInput = 0f;
+=======
+    public float getPowerProduced(){
+        float powerProduced = 0f;
+>>>>>>> 8218cfc7... cleaned up PowerGraph
         for(Tile producer : producers){
             if(producer.block().consumesPower){
                 bufferInput += producer.entity.power.amount;
@@ -48,9 +53,11 @@ public class PowerGraph{
                 totalInput += producer.entity.power.amount;
             }
         }
+        return powerProduced;
+    }
 
-        float maxOutput = 0f;
-        float bufferOutput = 0f;
+    public float getPowrerNeeded(){
+        float powerNeeded = 0f;
         for(Tile consumer : consumers){
             if(consumer.block().outputsPower){
                 bufferOutput += consumer.block().powerCapacity - consumer.entity.power.amount;
@@ -58,43 +65,71 @@ public class PowerGraph{
                 maxOutput += consumer.block().powerCapacity - consumer.entity.power.amount;
             }
         }
+        return powerNeeded;
+    }
 
-        if(maxOutput < totalInput){
-            charge = true;
+    public float getBatteryStored(){
+        float totalAccumulator = 0f;
+        for(Tile battery : batteries){
+            totalAccumulator += battery.entity.power.satisfaction * battery.block().basePowerUse;
         }
+    }
 
-        if(totalInput + bufferInput <= 0.0001f || maxOutput + bufferOutput <= 0.0001f){
-            return;
+    public float getBatteryCapacity(){
+        float totalCapacity = 0f;
+        for(Tile battery : batteries){
+            totalCapacity += (1f - battery.entity.power.satisfaction) * battery.block().basePowerUse;
         }
+    }
 
-        float bufferUsed;
-        if(charge){
-            bufferUsed = Math.min((totalInput - maxOutput) / bufferOutput, 1f);
-        }else{
-            bufferUsed = Math.min((maxOutput - totalInput) / bufferInput, 1f);
+    public float useBatteries(float needed){
+        float stored = getBatteryStored();
+        float used = Math.min(stored, needed);
+        float thing = 1f - (used / stored);
+        for(Tile battery : batteries){
+            battery.entity.power.satisfaction *= thing;
         }
+        return used;
+    }
 
-        float inputUsed = charge ? Math.min((maxOutput + bufferOutput) / totalInput, 1f) : 1f;
-        for(Tile producer : producers){
-            if(producer.block().consumesPower){
-                if(!charge){
-                    producer.entity.power.amount -= producer.entity.power.amount * bufferUsed;
-                }
-                continue;
+    public float chargeBatteries(float excess){
+        float capacity = getBatteryCapacity();
+        float thing = Math.min(1, excess / capacity);
+        for(tile battery : batteries){
+            battery.power.satisfaction += (1 - battery.power.satisfaction) * thing;
+        }
+        return Math.min(excess, capacity);
+    }
+
+    public void distributePower(float needed, float produced){
+        float satisfaction = Math.min(1, produced / needed);
+        for(Tile consumer : consumers){
+            if(consumer.block().bufferedPowerConsumer){
+                consumer.power.satisfaction += (1 - consumer.power.satisfaction) * satisfaction;
+            }else{
+                consumer.power.satisfaction = satisfaction;
             }
             producer.entity.power.amount -= producer.entity.power.amount * inputUsed;
         }
+    }
 
-        float outputSatisfied = charge ? 1f : Math.min((totalInput + bufferInput) / maxOutput, 1f);
-        for(Tile consumer : consumers){
-            if(consumer.block().outputsPower){
-                if(charge){
-                    consumer.entity.power.amount += (consumer.block().powerCapacity - consumer.entity.power.amount) * bufferUsed;
-                }
-                continue;
-            }
-            consumer.entity.power.amount += (consumer.block().powerCapacity - consumer.entity.power.amount) * outputSatisfied;
+    public void update(){
+        if(threads.getFrameID() == lastFrameUpdated || consumers.size == 0 || producers.size == 0){
+            return;
         }
+
+        lastFrameUpdated = threads.getFrameID();
+
+        float powerNeeded = getPowrerNeeded();
+        float powerProduced = getPowerProduced();
+
+        if(powerNeeded > powerProduced){
+            powerProduced += useBatteries(powerNeeded - powerProduced);
+        }else if(powerProduced > powerNeeded){
+            powerProduced -= chargeBatteries(powerProduced - powerNeeded);
+        }
+
+        distributePower(powerNeeded, powerProduced);
     }
 
     public void add(PowerGraph graph){
