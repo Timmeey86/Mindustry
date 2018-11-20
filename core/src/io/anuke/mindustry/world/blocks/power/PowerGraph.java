@@ -34,7 +34,7 @@ public class PowerGraph{
     public float getPowerProduced(){
         float powerProduced = 0f;
         for(Tile producer : producers){
-            powerProduced += producer.block().getPowerProduction(producer);
+            //powerProduced += producer.block().getPowerProduction(producer);
         }
         return powerProduced;
     }
@@ -42,11 +42,11 @@ public class PowerGraph{
     public float getPowerNeeded(){
         float powerNeeded = 0f;
         for(Tile consumer : consumers){
-            if(consumer.block().bufferedPowerConsumer){
-                powerNeeded += (1f - consumer.entity.power.satisfaction) * consumer.block().basePowerUse;
-            }else{
-                powerNeeded += consumer.block().basePowerUse + consumer.entity.power.extraUse;
-            }
+//            if(consumer.block().bufferedPowerConsumer){
+//                powerNeeded += (1f - consumer.entity.power.satisfaction) * consumer.block().basePowerUse;
+//            }else{
+//                powerNeeded += consumer.block().basePowerUse + consumer.entity.power.extraUse;
+//            }
         }
         return powerNeeded;
     }
@@ -54,7 +54,7 @@ public class PowerGraph{
     public float getBatteryStored(){
         float totalAccumulator = 0f;
         for(Tile battery : batteries){
-            totalAccumulator += battery.entity.power.satisfaction * battery.block().basePowerUse;
+            //totalAccumulator += battery.entity.power.satisfaction * battery.block().basePowerUse;
         }
         return totalAccumulator;
     }
@@ -62,7 +62,7 @@ public class PowerGraph{
     public float getBatteryCapacity(){
         float totalCapacity = 0f;
         for(Tile battery : batteries){
-            totalCapacity += (1f - battery.entity.power.satisfaction) * battery.block().basePowerUse;
+            //totalCapacity += (1f - battery.entity.power.satisfaction) * battery.block().basePowerUse;
         }
         return totalCapacity;
     }
@@ -72,7 +72,7 @@ public class PowerGraph{
         float used = Math.min(stored, needed);
         float thing = 1f - (used / stored);
         for(Tile battery : batteries){
-            battery.entity.power.satisfaction *= thing;
+            //battery.entity.power.satisfaction *= thing;
         }
         return used;
     }
@@ -81,7 +81,7 @@ public class PowerGraph{
         float capacity = getBatteryCapacity();
         float thing = Math.min(1, excess / capacity);
         for(Tile battery : batteries){
-            battery.entity.power.satisfaction += (1 - battery.entity.power.satisfaction) * thing;
+            //battery.entity.power.satisfaction += (1 - battery.entity.power.satisfaction) * thing;
         }
         return Math.min(excess, capacity);
     }
@@ -89,11 +89,11 @@ public class PowerGraph{
     public void distributePower(float needed, float produced){
         float satisfaction = Math.min(1, produced / needed);
         for(Tile consumer : consumers){
-            if(consumer.block().bufferedPowerConsumer){
-                consumer.entity.power.satisfaction += (1 - consumer.entity.power.satisfaction) * satisfaction;
-            }else{
-                consumer.entity.power.satisfaction = satisfaction;
-            }
+            //if(consumer.block().bufferedPowerConsumer){
+            //    consumer.entity.power.satisfaction += (1 - consumer.entity.power.satisfaction) * satisfaction;
+            //}else{
+            //    consumer.entity.power.satisfaction = satisfaction;
+            //}
         }
     }
 
