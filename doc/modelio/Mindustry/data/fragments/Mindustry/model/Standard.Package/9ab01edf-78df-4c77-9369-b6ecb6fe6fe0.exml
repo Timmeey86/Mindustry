@@ -20,12 +20,10 @@
         <COMPID name="Battery" mc="Standard.Class" uid="b39117e3-0019-453a-b94d-7f679d8e690f"/>
         <COMPID name="PowerGenerator" mc="Standard.Class" uid="db3a2292-1d96-4739-b5d4-9d64701e6fb5"/>
         <COMPID name="PhaseWeaver" mc="Standard.Class" uid="5e257739-6221-40aa-b8f1-6a0cf5002893"/>
-        <COMPID name="LiquidGenerator" mc="Standard.Class" uid="0023abef-84f3-498d-9614-f716a817edc3"/>
         <COMPID name="LiquidHeatGenerator" mc="Standard.Class" uid="317413cb-da75-4195-b004-acfcdce9936c"/>
         <COMPID name="SolarGenerator" mc="Standard.Class" uid="dde3898a-6af3-489c-9be0-eb6bc1e9315b"/>
-        <COMPID name="ItemGenerator" mc="Standard.Class" uid="d9780e89-c706-4127-93f8-db91cb87eb20"/>
+        <COMPID name="ItemLiquidGenerator" mc="Standard.Class" uid="d9780e89-c706-4127-93f8-db91cb87eb20"/>
         <COMPID name="DecayGenerator" mc="Standard.Class" uid="ebe6a382-55a2-4abb-9cfc-afbcfb4f7f64"/>
-        <COMPID name="ItemLiquidGenerator" mc="Standard.Class" uid="04150e57-49d8-4238-9774-1d5c6cf851db"/>
         <COMPID name="BurnerGenerator" mc="Standard.Class" uid="d43a27fc-2ba1-4091-a1ca-8dcf70b3d309"/>
         <COMPID name="TurbineGenerator" mc="Standard.Class" uid="e24ffd76-31a8-4c06-9e86-9665d62a8455"/>
         <COMPID name="FusionReactor" mc="Standard.Class" uid="ca403797-7b9b-467c-9214-ba010030cba1"/>
