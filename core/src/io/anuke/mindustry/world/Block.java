@@ -20,6 +20,7 @@ import io.anuke.mindustry.input.CursorType;
 import io.anuke.mindustry.type.ContentType;
 import io.anuke.mindustry.type.Item;
 import io.anuke.mindustry.type.ItemStack;
+import io.anuke.mindustry.world.consumers.ConsumePower;
 import io.anuke.mindustry.world.meta.*;
 import io.anuke.ucore.core.Timers;
 import io.anuke.ucore.graphics.Draw;
@@ -185,6 +186,14 @@ public class Block extends BaseBlock {
         return out;
     }
 
+    protected float getProgressIncrease(TileEntity entity, float baseTime){
+        float progressIncrease = 1f / baseTime * entity.delta();
+        if(hasPower){
+            progressIncrease *= entity.power.satisfaction; // Reduced increase in case of low power
+        }
+        return progressIncrease;
+    }
+
     public boolean isLayer(Tile tile){
         return true;
     }
@@ -330,13 +339,15 @@ public class Block extends BaseBlock {
 
         consumes.forEach(cons -> cons.display(stats));
 
-        if(hasPower) stats.add(BlockStat.powerCapacity, powerCapacity, StatUnit.powerUnits);
+        // Note: Power stats are added by the consumers.
         if(hasLiquids) stats.add(BlockStat.liquidCapacity, liquidCapacity, StatUnit.liquidUnits);
         if(hasItems) stats.add(BlockStat.itemCapacity, itemCapacity, StatUnit.items);
     }
 
     public void setBars(){
-        if(hasPower) bars.add(new BlockBar(BarType.power, true, tile -> tile.entity.power.amount / powerCapacity));
+        if(consumes.hasSubtypeOf(ConsumePower.class) && consumes.getSubtypeOf(ConsumePower.class).isBuffered){
+            bars.add(new BlockBar(BarType.power, true, tile -> tile.entity.power.satisfaction));
+        }
         if(hasLiquids) bars.add(new BlockBar(BarType.liquid, true, tile -> tile.entity.liquids.total() / liquidCapacity));
         if(hasItems) bars.add(new BlockBar(BarType.inventory, true, tile -> (float) tile.entity.items.total() / itemCapacity));
     }
@@ -401,8 +412,8 @@ public class Block extends BaseBlock {
             explosiveness += tile.entity.liquids.sum((liquid, amount) -> liquid.flammability * amount / 2f);
         }
 
-        if(hasPower){
-            power += tile.entity.power.amount;
+        if(consumes.hasSubtypeOf(ConsumePower.class) && consumes.getSubtypeOf(ConsumePower.class).isBuffered){
+            power += tile.entity.power.satisfaction * consumes.getSubtypeOf(ConsumePower.class).powerCapacity;
         }
 
         tempColor.mul(1f / units);
